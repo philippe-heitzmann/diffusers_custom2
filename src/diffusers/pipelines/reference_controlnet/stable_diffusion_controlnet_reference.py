@@ -242,6 +242,8 @@ class StableDiffusionControlNetReferencePipeline(StableDiffusionControlNetPipeli
             prompt_embeds,
             negative_prompt_embeds,
             controlnet_conditioning_scale,
+            control_guidance_start=[0.0],
+            control_guidance_end=[1.0],
         )
 
         # 2. Define call parameters
